@@ -7,6 +7,9 @@ import flower from "../assets/flower.webp";
 function Skills() {
   return (
     <SkillContainerStyled>
+      <HeaderStyled>
+        <h2>Skills and Equipment</h2>
+      </HeaderStyled>
       <SkillPageStyled>
         <SkillStyled>
           <div>
@@ -219,4 +222,19 @@ const EquipmentStyled = styled.div`
   }
 `;
 
+const HeaderStyled = styled.div`
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+  background-color: #b349ff;
+  padding: 1rem;
+  color: white;
+  font-weight: 800;
+  text-align: center;
+  border-bottom-right-radius: 40px;
+  border-top-right-radius: 40px;
+  max-width: 50%;
+  margin-top: 2rem;
+  @media (max-width: 1000px) {
+    max-width: 80%;
+  }
+`;
 export default Skills;

@@ -121,8 +121,8 @@ const PagesStyled = styled.div`
 `;
 
 const ProjectsTitleStyled = styled.div`
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgb(248, 249, 250)),
-    url(${marek});
+  background-image: url(${marek});
+  height: 30vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

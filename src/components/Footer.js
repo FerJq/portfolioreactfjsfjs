@@ -33,6 +33,7 @@ const CSSFooter = styled.nav`
   justify-content: center;
   background: rgb(248, 249, 250);
   z-index: 10;
+  text-align: center;
 
   i {
     color: rgb(179, 73, 255);
@@ -50,6 +51,7 @@ const CSSFooter = styled.nav`
     font-family: "Whisper", cursive;
     font-size: 1.5rem;
     color: rgb(179, 73, 255);
+    font-weight: 600;
   }
 `;
 

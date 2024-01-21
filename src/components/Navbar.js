@@ -25,30 +25,6 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="/#">
-                  Home
-                </a>
-              </li>
-              <li className="nav-item">
-                <a
-                  className="nav-link active"
-                  aria-current="page"
-                  href="/skills"
-                >
-                  Skills
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/pages">
-                  Projects
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/contact">
-                  Contact
-                </a>
-              </li>
-              <li className="nav-item">
                 <a
                   className="nav-link"
                   href="https://www.shecodes.io/graduates/64928-fernanda-santiago"
@@ -78,6 +54,7 @@ const Navbar = () => {
 };
 
 const CssNav = styled.nav`
+  position: sticky;
   .navbar-brand {
     color: rgb(179, 73, 255);
     font-weight: bolder;

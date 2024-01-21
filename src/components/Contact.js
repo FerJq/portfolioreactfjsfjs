@@ -2,107 +2,109 @@ import React from "react";
 //Styled
 import styled from "styled-components";
 //imgs
-import contact from "../assets/contactwallp.jpg";
 import disc from "../assets/brands/disc.jpg";
 import goo from "../assets/brands/goo.jpg";
 import link from "../assets/brands/link.png";
-//component
 
 const Contact = () => {
   return (
     <ContactPageStyled>
       <ContactSectionstyled>
-        <div className="row row-cols-1 row-cols-md-3 g-4">
-          <div className="col">
-            <div className="card h-100">
-              <img src={disc} className="card-img-top" alt="discord" />
-              <div className="card-body">
-                <h5 className="card-title">You can contact me on Discord!</h5>
-                <p className="card-text">@feerjs</p>
-              </div>
-              <div className="card-footer">
-                <small className="text-body-secondary">
-                  Last time online 1 mins ago.
-                </small>
-              </div>
-            </div>
-          </div>
-          <div className="col">
-            <div className="card h-100">
-              <img src={goo} className="card-img-top" alt="google" />
-              <div className="card-body">
-                <h5 className="card-title">You can contact me on Gmail!</h5>
-                <p className="card-text">wisefjs@gmail.com</p>
-              </div>
-              <div className="card-footer">
-                <small className="text-body-secondary">
-                  Last time online 21 mins ago.
-                </small>
-              </div>
-            </div>
-          </div>
-          <div className="col">
-            <div className="card h-100">
-              <img src={link} className="card-img-top" alt="linkedin" />
-              <div className="card-body">
-                <h5 className="card-title">You can contact me on Linkedin!</h5>
-                <a
-                  className="card-text"
-                  href="https://www.linkedin.com/in/fernanda-j-santiago-b93b07265/"
-                >
-                  Profile Here.
-                </a>
-              </div>
-              <div className="card-footer">
-                <small className="text-body-secondary">
-                  Last time online 3 mins ago.
-                </small>
-              </div>
-            </div>
-          </div>
-        </div>
+        <h1>Contact me</h1>
+        <section>
+          <ul>
+            <li>
+              <h6>Gmail</h6>
+              <img src={goo} />
+              <a href="mailto:wisefjsgmail.com">Click Here</a>
+            </li>
+            <li>
+              <h6>Discord</h6>
+              <img src={disc} />
+              <a href="https://discord.com/">@ferjsant</a>
+            </li>
+            <li>
+              <h6>Linkedin</h6>
+              <img src={link} />
+              <a href="https://www.linkedin.com/in/fernanda-j-santiago-b93b07265/">
+                Click Here
+              </a>
+            </li>
+          </ul>
+        </section>
+        <div />
       </ContactSectionstyled>
     </ContactPageStyled>
   );
 };
 
 const ContactPageStyled = styled.div`
+  background-color: #f7f8f9;
   overflow: hidden;
-  height: 90vh;
   margin: auto;
-  background-image: url(${contact});
-  background-repeat: no-repeat;
-  background-size: cover;
-  @media (max-width: 900px) {
-    height: 100%;
-  }
 `;
 
 const ContactSectionstyled = styled.div`
-  margin: auto;
-  padding: 4rem;
+  text-align: center;
+  margin: 6rem;
+  overflow: hidden;
 
-  .row {
-    @media (max-width: 900px) {
-      width: 100%;
-      padding: 1rem;
+  div {
+    margin: 3rem;
+    height: 2px;
+    background-color: #b349ff;
+  }
+
+  h1 {
+    font-family: "Whisper", cursive;
+    font-weight: 700;
+    font-size: 3rem;
+  }
+
+  ul {
+    overflow: hidden;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    @media (max-width: 520px) {
       display: block;
-      justify-content: center;
+    }
+
+    li {
+      display: grid;
+      grid-template-columns: 1fr;
+      font-weight: 800;
+      margin: 2rem;
+
+      a {
+        font-weight: 400;
+        margin-top: 1rem;
+      }
+
+      p {
+        font-weight: 400;
+        margin-top: 1rem;
+      }
+
+      img {
+        height: 5vh;
+        border-radius: 20px;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+
+        @media (max-width: 520px) {
+          display: none;
+        }
+      }
+
+      h6 {
+        font-size: 1rem;
+      }
     }
   }
-
-  .col {
-    @media (max-width: 900px) {
-      width: 100%;
-    }
-  }
-
-  .card {
-    margin-top: 4rem;
-  }
-
   @media (max-width: 900px) {
-    margin: 0;
     padding: 1rem;
   }
 `;

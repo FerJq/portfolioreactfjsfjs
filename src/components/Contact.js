@@ -15,17 +15,17 @@ const Contact = () => {
           <ul>
             <li>
               <h6>Gmail</h6>
-              <img src={goo} />
+              <img src={goo} alt="gmail" />
               <a href="mailto:wisefjsgmail.com">Click Here</a>
             </li>
             <li>
               <h6>Discord</h6>
-              <img src={disc} />
+              <img src={disc} alt="discord" />
               <a href="https://discord.com/">@ferjsant</a>
             </li>
             <li>
               <h6>Linkedin</h6>
-              <img src={link} />
+              <img src={link} alt="linkedin" />
               <a href="https://www.linkedin.com/in/fernanda-j-santiago-b93b07265/">
                 Click Here
               </a>

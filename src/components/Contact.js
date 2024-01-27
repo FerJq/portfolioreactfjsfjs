@@ -71,6 +71,7 @@ const ContactSectionstyled = styled.div`
 
     @media (max-width: 520px) {
       display: block;
+      padding: 0;
     }
 
     li {
@@ -90,11 +91,12 @@ const ContactSectionstyled = styled.div`
       }
 
       img {
-        height: 5vh;
+        width: 100%;
+        height: 15vh;
         border-radius: 20px;
         box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
 
-        @media (max-width: 520px) {
+        @media (max-width: 720px) {
           display: none;
         }
       }
@@ -106,6 +108,11 @@ const ContactSectionstyled = styled.div`
   }
   @media (max-width: 900px) {
     padding: 1rem;
+  }
+
+  @media (max-width: 520px) {
+    display: block;
+    margin: 0 auto;
   }
 `;
 

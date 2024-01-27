@@ -52,7 +52,7 @@ function Skills() {
             <p>Artificial Inteligent</p>
           </div>
           <div>
-            <i class="fa-solid fa-camera"></i>
+            <i className="fa-solid fa-camera"></i>
             <p>Photoshop</p>
           </div>
         </SkillStyled>

@@ -10,6 +10,7 @@ const Contact = () => {
   return (
     <ContactPageStyled>
       <ContactSectionstyled>
+        <div />
         <h1>Contact me</h1>
         <section>
           <ul>
@@ -32,7 +33,6 @@ const Contact = () => {
             </li>
           </ul>
         </section>
-        <div />
       </ContactSectionstyled>
     </ContactPageStyled>
   );
@@ -46,7 +46,7 @@ const ContactPageStyled = styled.div`
 
 const ContactSectionstyled = styled.div`
   text-align: center;
-  margin: 6rem;
+  margin: 1rem;
   overflow: hidden;
 
   div {

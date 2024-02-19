@@ -186,6 +186,9 @@ const CSSChildrenBox = styled.div`
   p {
     padding: 1rem;
   }
+  @media (max-width: 900px) {
+    margin: 1rem;
+  }
 `;
 
 const ProjectsStyled = styled.div`

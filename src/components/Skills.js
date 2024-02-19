@@ -2,7 +2,6 @@ import React from "react";
 //Styled
 import styled from "styled-components";
 import backskills from "../assets/backskills.jpg";
-import flower from "../assets/flower.webp";
 
 function Skills() {
   return (
@@ -25,7 +24,6 @@ function Skills() {
             <i className="fa-solid fa-desktop"></i>
             <p>Responsive Web Design</p>
           </div>
-          <img src={flower} alt="flowers" />
           <div>
             <i className="fa-brands fa-figma"></i>
             <p>Figma</p>
@@ -57,7 +55,6 @@ function Skills() {
           </div>
         </SkillStyled>
         <EquipmentStyled>
-          <h2>Current Equipment</h2>
           <ul>
             <li>
               <span>Operating System:</span> Windows 11 Home Single Language
@@ -206,6 +203,9 @@ const EquipmentStyled = styled.div`
     font-family: "Whisper", cursive;
     font-size: 4rem;
     text-align: center;
+    background-color: rgb(179, 73, 255);
+    color: white;
+    border-radius: 20px;
   }
 
   ul {
@@ -219,6 +219,9 @@ const EquipmentStyled = styled.div`
       color: rgb(179, 73, 255);
       font-weight: 500;
     }
+  }
+  @media (max-width: 900px) {
+    margin: 1rem;
   }
 `;
 

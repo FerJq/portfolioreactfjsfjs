@@ -1,6 +1,7 @@
 import React from "react";
 //Styled
 import styled from "styled-components";
+
 //Animation
 
 const Navbar = () => {
@@ -24,6 +25,34 @@ const Navbar = () => {
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
+              <li className="nav-item">
+                <a
+                  href="/about"
+                  className="nav-link active"
+                  aria-current="page"
+                >
+                  About
+                </a>
+              </li>
+              <li className="nav-item">
+                <a
+                  href="/skills"
+                  className="nav-link active"
+                  aria-current="page"
+                >
+                  Skills
+                </a>
+              </li>
+              <li className="nav-item">
+                <a href="/pages" className="nav-link">
+                  Projects
+                </a>
+              </li>
+              <li className="nav-item">
+                <a href="/contact" className="nav-link">
+                  Contact
+                </a>
+              </li>
               <li className="nav-item">
                 <a
                   className="nav-link"

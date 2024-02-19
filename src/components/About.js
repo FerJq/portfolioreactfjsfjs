@@ -5,10 +5,13 @@ import styled from "styled-components";
 import flowers from "../assets/flowers.jpg";
 import food from "../assets/food.jpg";
 import walks from "../assets/walks.jpg";
+// components
+import Description from "./Description";
 
 const About = () => {
   return (
     <Container>
+      <Description />
       <CSSMainBox>
         <CSSChildrenBox>
           <img src={flowers} alt="pictures" />
@@ -45,12 +48,17 @@ const About = () => {
           </p>
         </CSSChildrenBox>
       </CSSMainBox>
+      <div />
     </Container>
   );
 };
 
 const Container = styled.div`
   margin: 0 2rem 0 2rem;
+
+  div {
+    margin-top: 2rem;
+  }
 `;
 
 const CSSMainBox = styled.div`

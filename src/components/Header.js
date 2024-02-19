@@ -8,30 +8,22 @@ import pic2 from "../assets/pic2.jpg";
 import pic3 from "../assets/pic3.png";
 import pic4 from "../assets/pic4.jpg";
 
-//components
-import About from "./About.js";
-import Description from "./Description.js";
-
 const Profile = () => {
   return (
-    <>
-      <header>
-        <CSSProfile>
-          <CSSInfo>
-            <h2>Fernanda J. Santiago</h2>
-            <h3>Front End Developer</h3>
-          </CSSInfo>
-          <Image>
-            <img src={pic1} alt="profile_my_picture1" />
-            <img src={pic2} alt="profile_my_picture2" />
-            <img src={pic3} alt="profile_my_picture3" />
-            <img src={pic4} alt="profile_my_picture4" />
-          </Image>
-        </CSSProfile>
-      </header>
-      <Description />
-      <About />
-    </>
+    <header>
+      <CSSProfile>
+        <CSSInfo>
+          <h2>Fernanda J. Santiago</h2>
+          <h3>Front End Developer</h3>
+        </CSSInfo>
+        <Image>
+          <img src={pic1} alt="profile_my_picture1" />
+          <img src={pic2} alt="profile_my_picture2" />
+          <img src={pic3} alt="profile_my_picture3" />
+          <img src={pic4} alt="profile_my_picture4" />
+        </Image>
+      </CSSProfile>
+    </header>
   );
 };
 

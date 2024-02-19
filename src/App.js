@@ -7,7 +7,6 @@ import Contact from "./components/Contact.js";
 import Pages from "./components/Pages.js";
 import Footer from "./components/Footer.js";
 import About from "./components/About.js";
-import Profile from "./components/Header.js";
 //Utilities
 import { Routes, Route } from "react-router-dom";
 
